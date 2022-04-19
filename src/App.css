@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
+  /* background-color: yellow; */
+  height: 96px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.app-header span {
+  color: red;
+}
+
+.main {
+  /* background-color: rgb(245, 245, 245); */
+  margin: 10px 100px 0px 100px;
+  height: 80vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+
+.main h4 {
+  box-shadow: rgba(74, 74, 74, 0.15) 0px 8px 24px;
+}
+
+.connecting {
+  position: absolute;
+  right: 20rem;
+  top: 9rem;
+  background-color: white;
+  border-radius: 25px;
+  padding: 15px;
+  color: green;
+  cursor: pointer;
+}
+
+.connected {
+  position: absolute;
+  right: 20rem;
+  top: 9rem;
+  background-color: green;
+  border-radius: 25px;
+  padding: 15px;
   color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.connected:hover {
+  position: absolute;
+  right: 20rem;
+  top: 9rem;
+  background-color: rgb(95, 0, 0);
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  content: "Disconnect";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disconnecting {
+  position: absolute;
+  right: 10rem;
+  top: 9rem;
+  background-color: white;
+  border-radius: 25px;
+  padding: 15px;
+  color: red;
+  cursor: pointer;
+}
+
+.disconnected {
+  position: absolute;
+  right: 10rem;
+  top: 9rem;
+  background-color: red;
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.disconnected:hover {
+  position: absolute;
+  right: 10rem;
+  top: 9rem;
+  background-color: rgb(95, 0, 0);
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  content: "Disconnect";
+}
+
+/* .separator {
+  border-left: 1px solid red;
+  height: 30rem;
+  position: absolute;
+  left: 28.5%;
+} */
+
+.left {
+  /* background-color: red; */
+  height: 85%;
+  width: 18%;
+  margin-left: 5rem;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+
+.right {
+  /* background-color: red; */
+  height: 85%;
+  width: 67%;
+  margin-left: 5rem;
+  border-radius: 15px;
 }
